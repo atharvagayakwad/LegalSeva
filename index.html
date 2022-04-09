@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LegalSeva</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Loading/Splash Screen -->
+    <section id="loader">
+      <div class="intro-container">
+        <h1 class="logo-header">
+          <span class="logo">Legal</span
+          ><span style="color: #be9b49" class="logo">Seva</span>
+        </h1>
+        <p class="quote">" A passion for justice. The experience for win."</p>
+      </div>
+    </section>
+
+    <header id="header">
+      <!-- NavBar -->
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div id="navbar">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <div class="navbar-brand-container">
+                <img src="images/logo.png" />
+                <a class="navbar-brand" href="#">Legal<span>Seva</span></a>
+              </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li><a id="header-nav-link" href="#header">Home</a></li>
+                <li><a id="services-nav-link" href="#services">Services</a></li>
+                <li>
+                  <a id="testimonial-nav-link" href="#testimonial"
+                    >Testimonial</a
+                  >
+                </li>
+                <li><a id="attorney-nav-link" href="#attorney">Attorney</a></li>
+                <li><a id="contact-nav-link" href="#contact">contact Us</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+
+      <!-- Carousel -->
+      <div
+        id="carousel-example-generic"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-example-generic"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div
+              class="banner"
+              style="background-image: url(images/lawyers-2jpg.jpg)"
+            ></div>
+            <div class="carousel-caption">
+              <h2 class="animated fadeInDown" style="animation-delay: 1s">
+                We Are <span>LAW EXPERTS</span>
+              </h2>
+              <h3 class="animated fadeInUp" style="animation-delay: 2s">
+                The best law practices & services for all your legal needs.
+              </h3>
+              <p class="animated zoomIn" style="animation-delay: 3s">
+                <a href="#contact">Contact us</a>
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="banner"
+              style="background-image: url(images/court.jpg)"
+            ></div>
+            <div class="carousel-caption">
+              <h2 class="animated fadeInDown" style="animation-delay: 1s">
+                Justice <span>oriented</span>
+              </h2>
+              <h3 class="animated fadeInUp" style="animation-delay: 2s">
+                The best law practices & services for all your legal needs.
+              </h3>
+              <p class="animated zoomIn" style="animation-delay: 3s">
+                <a href="#contact">Contact us</a>
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="banner"
+              style="background-image: url(images/lawyers-3.jpg)"
+            ></div>
+            <div class="carousel-caption">
+              <h2 class="animated fadeInDown" style="animation-delay: 1s">
+                Client <span>Focused</span>
+              </h2>
+              <h3 class="animated fadeInUp" style="animation-delay: 2s">
+                The best law practices & services for all your legal needs.
+              </h3>
+              <p class="animated zoomIn" style="animation-delay: 3s">
+                <a href="#contact">Contact us</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a
+          class="left carousel-control"
+          href="#carousel-example-generic"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="right carousel-control"
+          href="#carousel-example-generic"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-right"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Services -->
+      <section id="services" class="services section">
+        <img class="watermark" src="images/symbol.png" />
+        <h1 class="sectionTitle">Our Services</h1>
+        <div class="service-container">
+          <div class="service">
+            <i class="fas fa-users"></i>
+            <h2>FAMILY LAW</h2>
+            <p>
+              Family law deals with family matters and domestic relations,
+              including marriage and civil partnerships, the termination of
+              relationships and child law. Legal Seva aims to empower the
+              average person to know their rights and dispel the taboo around
+              getting legal help.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-hospital-alt"></i>
+            <h2>medical LAW</h2>
+            <p>
+              Medical Law: is the body of law governing the rights and
+              obligations of doctors and their patients. Healthcare in India has
+              a universal health system operated by the member states and
+              territories. The law is an obligation imposed by the competent
+              authority, the failure of which would result in punishment in the
+              form of monetary compensation or imprisonment, or both.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-home"></i>
+            <h2>property LAW</h2>
+            <p>
+              Property law is the area of law that governs the various forms of
+              ownership in real property (land) and personal property. Property
+              refers to legally protected claims to resources, such as land and
+              personal property, including intellectual property. Property can
+              be exchanged through contract law, and if a property is violated,
+              one could sue under tort law to protect it.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-money-check-alt"></i>
+            <h2>insurance LAW</h2>
+            <p>
+              Insurance is a means of protection from financial loss. It is a
+              form of risk management primarily used to hedge against the risk
+              of a contingent, uncertain loss
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-user-graduate"></i>
+            <h2>education LAW</h2>
+            <p>
+              The Education law is a branch of Civil Law and deals with the
+              laws, regulations, policies, and instructions that govern and
+              regulate Federal and State Education, and also the education
+              provided by the private institutions, from the pre-nursery school
+              level to the higher education in universities.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-bus-alt"></i>
+            <h2>transportation LAW</h2>
+            <p>
+              Transportation Law is the body of law that governs transportation
+              infrastructure and its use. It regulates the way that people
+              travel using any method of transportation including railways, air
+              travel, vehicular travel and even waterways.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-handshake"></i>
+            <h2>trade LAW</h2>
+            <p>
+              International trade laws are those areas of law that deal with
+              certain rules and customs regarding the handling of trade between
+              countries. It is also used for trade between two private sector
+              companies in two countries.
+            </p>
+          </div>
+          <div class="service">
+            <i class="fas fa-user-secret"></i>
+            <h2>criminal LAW</h2>
+            <p>
+              Criminal law deals with offences against society. It is a devic3
+              by which organised society protects the security of individual
+              interests and ensures the survival of the group.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section id="testimonial" class="test section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-center m-auto">
+              <h2 class="sectionTitle">Testimonials</h2>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel -->
+                <div class="carousel-inner">
+                  <div class="item carousel-item active">
+                    <div class="img-box">
+                      <img src="images/img1.jpg" alt="" />
+                    </div>
+                    <p class="testimonial">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Asperiores velit, reiciendis adipisci exercitationem
+                      similique inventore quod tenetur voluptatem alias totam
+                      aperiam doloribus molestias blanditiis maiores earum
+                      distinctio autem nostrum rerum facere accusamus.
+                    </p>
+                    <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
+                  </div>
+                  <div class="item carousel-item">
+                    <div class="img-box">
+                      <img src="images/img2.jpg" alt="" />
+                    </div>
+                    <p class="testimonial">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Asperiores velit, reiciendis adipisci exercitationem
+                      similique inventore quod tenetur voluptatem alias totam
+                      aperiam doloribus molestias blanditiis maiores earum
+                      distinctio autem nostrum rerum facere accusamus.
+                    </p>
+                    <p class="overview">
+                      <b>Dauglas McNun</b>, Financial Advisor
+                    </p>
+                  </div>
+                  <div class="item carousel-item">
+                    <div class="img-box">
+                      <img src="images/img3.jpg" alt="" />
+                    </div>
+                    <p class="testimonial">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Asperiores velit, reiciendis adipisci exercitationem
+                      similique inventore quod tenetur voluptatem alias totam
+                      aperiam doloribus molestias blanditiis maiores earum
+                      distinctio autem nostrum rerum facere accusamus.
+                    </p>
+                    <p class="overview"><b>Hellen Wright</b>, Athelete</p>
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <a
+                  class="carousel-control left carousel-control-prev"
+                  href="#myCarousel"
+                  data-slide="prev"
+                >
+                  <i class="fa fa-angle-left"></i>
+                </a>
+                <a
+                  class="carousel-control right carousel-control-next"
+                  href="#myCarousel"
+                  data-slide="next"
+                >
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Attorneys -->
+      <section id="attorney" class="attorney section">
+        <h1 class="sectionTitle">Our Attorneys</h1>
+        <div class="attorney-container">
+          <div class="profiles">
+            <div class="profile">
+              <img src="images/img-1.jpg" class="profile-img" />
+
+              <h3 class="user-name">Robert Smith</h3>
+              <h5>Criminal Lawyer</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati dolor, perspiciatis.
+              </p>
+            </div>
+            <div class="profile">
+              <img src="images/img-2.jpg" class="profile-img" />
+
+              <h3 class="user-name">Brent Grundy</h3>
+              <h5>Tax Lawyer</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati dolor, perspiciatis.
+              </p>
+            </div>
+            <div class="profile">
+              <img src="images/img-3.jpg" class="profile-img" />
+
+              <h3 class="user-name">John Henderson</h3>
+              <h5>Medical Lawyer</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati dolor, perspiciatis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="contact-container">
+          <img class="watermark" src="images/justice.png" />
+          <h2 class="sectionTitle">Contact Us</h2>
+          <div class="content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Address</div>
+                <div class="text-one">India</div>
+                <div class="text-two"></div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone"></i>
+                <div class="topic">Phone</div>
+                <div class="text-one">+91 81279 07409</div>
+                <div class="text-two"></div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">contact@legalseva.org</div>
+                <div class="text-two"></div>
+              </div>
+            </div>
+            <div class="right-side">
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name" />
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email" />
+                </div>
+                <div class="input-box message-box">
+                  <textarea
+                    placeholder="Enter your message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="button">
+                  <input class="btn" type="button" value="Send Now" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

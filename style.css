@@ -1,0 +1,934 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow-color: #be9b49;
+}
+
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Pre Defined */
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 0;
+}
+
+.section {
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #f1f1f1;
+    height: fit-content;
+}
+
+.sectionTitle {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #BE9B49;
+    font-size: 40px;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sectionTitle:hover {
+    transform: scale(1.05);
+}
+
+/* Loader Screen */
+
+.intro-container {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #04070E;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.quote {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 200;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.quote.active {
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+.quote.fade {
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+/* Header */
+
+header .carousel-inner .item {
+    height: 100vh;
+}
+
+.block {
+    background: #04070e;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 4.6rem 0 rgba(0, 0, 0, 0.5);
+}
+
+#navbar {
+    width: 100%;
+    padding: 0 30px;
+    position: relative;
+    z-index: 99999;
+    /* border: 2px solid red; */
+}
+
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
+
+.navbar-brand-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis: 30rem; */
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.navbar-brand-container img {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+.navbar-brand-container .navbar-brand {
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-brand-container a span {
+    color: var(--yellow-color)
+}
+
+.nav.navbar-nav.navbar-right {
+    margin: 25px 0;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color: var(--yellow-color);
+    transform: scale(120%);
+
+}
+
+.navbar-inverse .navbar-toggle {
+    margin-top: 20px;
+}
+
+.banner {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+}
+
+#header .carousel-caption {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 18rem;
+}
+
+#header .carousel-caption h2 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#header .carousel-caption h2 span {
+    color: var(--yellow-color)
+}
+
+#header .carousel-caption a {
+    background: var(--yellow-color);
+    padding: 12px 32px;
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#header .carousel-caption a:hover {
+    text-decoration: none;
+    background: #d0aa50;
+    transform: scale(1.06);
+    transition: all 0.2s ease-in-out;
+}
+
+/* #header .carousel-control.right {
+    border: 2px solid white;
+    background-image: none;
+}
+
+#header .carousel-control.left {
+    border: 2px solid white;
+    background-image: none;
+} */
+
+.carousel-indicators .active {
+    background-color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+
+/* Services */
+
+.services {
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+.service-container {
+    /* border: 2px solid; */
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.watermark {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    height: 560px;
+}
+
+.service {
+    /* border: 2px solid black; */
+    width: calc(100% / 3);
+    margin: 2rem;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.service:hover {
+    background: #ddd;
+}
+
+.service i {
+    color: var(--yellow-color);
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.service h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.service p {
+    color: rgb(112, 113, 133);
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+/* Testimonials */
+
+.test {
+    background-image: url("images/img4.jpg");
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 3rem 0 0 0;
+    position: relative;
+
+}
+
+/* .test::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+} */
+
+.test h2 {
+    color: white;
+}
+
+.test .col-center {
+    margin: 0 auto;
+    float: none !important;
+    position: relative;
+}
+
+.test .carousel {
+    width: 90%;
+    margin: 50px auto;
+    padding: 0 50px;
+    /* position: absolute;
+    z-index: 9999; */
+}
+
+.test .carousel-item {
+    color: rgb(202, 202, 202);
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+.test .carousel .item .img-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 4px solid #BE9B49;
+    border-radius: 50%;
+}
+
+.test .carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.test .carousel .testimonial {
+    padding: 30px 0 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+}
+
+.test .carousel .overview {
+    font-style: italic;
+}
+
+.test .carousel .overview b {
+    text-transform: uppercase;
+    color: #be9b49;
+}
+
+.test .carousel .carousel-control {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+    background: none;
+}
+
+.test .carousel-control i {
+    font-size: 40px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.test .carousel .carousel-indicators {
+    bottom: -40px;
+}
+
+.test .carousel-indicators li,
+.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px;
+    border-radius: 50%;
+}
+
+.test .carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.test .carousel-indicators li.active {
+    background: #555;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Attorney */
+
+.attorney {
+    margin: 10rem 0 5rem 0;
+}
+
+.attorney-container {
+    margin: 2rem 4rem 0 4rem;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile {
+    flex-basis: 26rem;
+    margin: 2rem;
+}
+
+.profile img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile:hover img {
+    filter: grayscale(0);
+}
+
+.profile h3 {
+    font-size: 3.5rem;
+    color: black;
+    margin-top: 1.5rem 0;
+
+}
+
+.profile h5 {
+    font-size: 2rem;
+    color: var(--yellow-color);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.profile p {
+    color: rgb(113, 115, 115);
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    text-align: justify;
+}
+
+/* Contact */
+.contact {
+    background: var(--yellow-color);
+    min-height: fit-content;
+}
+
+.contact-container {
+    /* border: 2px solid; */
+    width: 85%;
+    margin: auto;
+    padding: 2rem 0 3rem 0;
+    position: relative;
+}
+
+.contact-container img {
+    height: 440px;
+    /* position: absolute; */
+    top: 50%;
+}
+
+.contact-container h2 {
+    border-bottom: 4px solid white;
+}
+
+.contact-container .content {
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-container .content .left-side {
+    /* border: 2px solid; */
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.contact-container .content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+}
+
+.contact-container .content .left-side .details {
+    /* border: 2px solid; */
+    margin: 1.4rem;
+    text-align: center;
+}
+
+.contact-container .content .left-side .details i {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-container .content .left-side .details .topic {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.contact-container .content .left-side .details .text-one,
+.contact-container .content .left-side .details .text-two {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.contact-container .content .right-side {
+    /* border: 2px solid red; */
+    width: 75%;
+    margin-left: 7.5rem;
+}
+
+/* .content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #ffffff;
+} */
+
+.contact-container .content .right-side .input-box {
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+.contact-container .content .right-side .input-box input,
+.contact-container .content .right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 1.5rem;
+    resize: none;
+}
+
+.contact-container .content .right-side .message-box {
+    min-height: 110px;
+}
+
+.contact-container .content .right-side .input-box textarea {
+    padding-top: 15px;
+}
+
+.contact-container .content .right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.contact-container .content .right-side .button .btn {
+    font-size: 1.8rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-container .content .right-side .button .btn:hover {
+    background-color: #f3da9e;
+}
+
+@media only screen and (max-width: 1350px) {
+    #header .carousel-caption {
+        padding-bottom: 140px;
+    }
+
+    #header .carousel-caption h2 {
+        font-size: 55px;
+    }
+
+    #header .carousel-caption h3 {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:892px) {
+    .navbar-inverse .navbar-nav li a {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .carousel-caption {
+        margin-top: 14rem;
+
+    }
+
+    #header .carousel-caption h2 {
+        display: inline-block;
+        font-size: 4.5rem;
+        padding-top: 1rem;
+    }
+
+    #header .carousel-caption h3 {
+        font-size: 2.1rem;
+    }
+
+    #header .carousel-caption a {
+        padding: 8px 28px;
+    }
+
+    .test .carousel .testimonial {
+        font-size: 1.8rem;
+    }
+
+    .test .carousel .overview {
+        padding-bottom: 1rem;
+    }
+
+    .profile img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .profile h3 {
+        font-size: 2.8rem;
+    }
+
+    .profile h5 {
+        font-size: 1.7rem;
+    }
+
+    .profile p {
+        font-size: 1.4rem;
+    }
+
+
+    .contact-container {
+        height: 100%;
+    }
+
+    .contact-container .content {
+        flex-direction: column-reverse;
+    }
+
+    .contact-container .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-container .content .left-side::before {
+        display: none;
+    }
+
+    .contact-container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .details {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 2, 5rem;
+        padding: 30px 15px;
+    }
+
+    .service {
+        width: 50%;
+    }
+
+    .logo-header {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .quote {
+        font-size: 25px;
+        font-weight: 200;
+    }
+}
+
+
+@media only screen and (max-width: 819px) {
+
+    .navbar-brand-container {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand-container .navbar-brand {
+        font-size: 3rem;
+    }
+
+    .navbar-brand-container img {
+        height: 3rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .navbar-collapse {
+        overflow: hidden;
+    }
+
+    .header-nav-link:hover {
+        transform: scale(0);
+    }
+
+
+    .navbar-inverse .navbar-brand {
+        font-size: 28px;
+        padding: 20px 15px 55px 0px;
+    }
+
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #header .carousel-caption {
+        padding-bottom: 130px;
+    }
+
+    #header .carousel-caption h2 {
+        font-size: 40px;
+        /* border: 2px solid red; */
+        margin-top: 20rem;
+    }
+
+    #header .carousel-caption h3 {
+        font-size: 20px;
+    }
+
+    #header .carousel-caption a {
+        padding: 10px 25px;
+    }
+
+    .service {
+        /* border: 2px solid; */
+        width: 70%
+    }
+
+    .test .carousel .testimonial {
+        font-size: 1.4rem;
+    }
+
+    .attorney-container .profiles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attorney-container .profiles .profile p {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .navbar-header {
+        position: relative;
+    }
+
+    .navbar-brand-container {
+        margin-bottom: 1rem;
+        position: absolute;
+        top: -30%;
+        left: 0;
+    }
+
+    .navbar-brand-container img {
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
+
+    #header .carousel-caption {
+        padding-bottom: 120px;
+    }
+
+    #header .carousel-caption h2 {
+        font-size: 35px;
+    }
+
+    #header .carousel-caption h3 {
+        font-size: 20px;
+    }
+
+    .logo-header {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .quote {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .navbar-inverse .navbar-brand {
+        font-size: 26px;
+        padding: 20px 0px;
+    }
+
+    .navbar-toggle {
+        margin-right: 0;
+    }
+
+    .watermark {
+        height: 340px;
+        top: 300%;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service p {
+        line-height: 28px;
+    }
+
+    .test .carousel-item {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .test .carousel .item .img-box {
+        height: 100px;
+        width: 100px;
+    }
+
+    .profile .profile-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .profile p {
+        text-align: center;
+        margin: 12px 60px 35px 60px;
+        font-size: 18px;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .contact-cont .watermark {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:759px) {
+    .navbar-header {
+        position: relative;
+    }
+
+    .navbar-brand-container {
+        margin-bottom: 1rem;
+        position: absolute;
+        top: -30%;
+        left: 0;
+    }
+
+    .contact-container .content .right-side .button .btn {
+        font-size: 1.5rem;
+    }
+
+}
